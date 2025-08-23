@@ -7,6 +7,12 @@
 23.07.2025 - 21.08.2025
 ### Сводка результатов: 
 Выполнено тестов: 90, Пройдено: 72 (80%), упало: 18 (20%), Обнаружено дефектов: 8.
+
+### Скрины отчетов Gradle и Allure
+[**Gradle**](https://github.com/Vera1744/diplom/blob/main/docs/gradle%20report.png)
+[**Allure**](https://github.com/Vera1744/diplom/blob/main/docs/Allure%20report1.png)
+[**Allure**](https://github.com/Vera1744/diplom/blob/main/docs/Allure%20report2.png)
+
 ### Дефекты:
 https://github.com/Vera1744/diplom/issues
 Серьезность: Критический.
