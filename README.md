@@ -5,6 +5,8 @@
 
 [**Отчёт**](https://github.com/Vera1744/diplom/blob/main/docs/report.md)
 
+[**Итоговый отчёт**](https://github.com/Vera1744/diplom/blob/main/docs/Summary.md)
+
 ## Начало работы
 1. Зарегистрируйтесь на GitHub
 2. Сделайте fork [проекта](https://github.com/Vera1744/diplom).
@@ -30,10 +32,10 @@
 3. Введите команду `docker-compose up` для запусков контейнеров, убедитесь, что они запустились. 
 4. Запустите jar-файл, в новом терминале введите команду, для `MySQL`: `java -jar artifacts/aqa-shop.jar` для `PostgreSQL`: `java -jar .\artifacts\aqa-shop.jar -Dspring.datasource.url=jdbc:postgressql://localhost:5432/app`
 5. Откройте в браузере [приложение](http://localhost:8080/), убедитесь, что оно запускается и работает.
-6. Запусите тесты. Вернитесь в IntelliJ IDEA и в новом терминале введите команду для `MySQL`:`./gradlew clean test` для `PostgreSQL`:`./gradlew clean test "-Ddb.url=jdbc:postgresgl://localhost:5432/app"`
+6. Запустите тесты. Вернитесь в IntelliJ IDEA и в новом терминале введите команду для `MySQL`:`./gradlew clean test` для `PostgreSQL`:`./gradlew clean test "-Ddb.url=jdbc:postgresgl://localhost:5432/app"`
 ### Окончание работы
-1. Остановить SUT командой CTRL + C
-2. По окончанию работы становите работу контейнеров командой `docker-compose down`
+1. Остановите SUT командой CTRL + C
+2. Остановите работу контейнеров командой `docker-compose down`
 
 ### Просмотреть отчет
 Для получения отчета Allure в терминале введите команду: `./gradlew allureServe`
