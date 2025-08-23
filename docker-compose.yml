@@ -14,7 +14,7 @@ services:
       MYSQL_PASSWORD: pass
 
   postgres:
-    image: postgres:17-alpine
+    image: postgres:14
     container_name: postgresql-container
     ports:
       - "5432:5432"

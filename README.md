@@ -27,12 +27,13 @@
 
 1. Запустите Docker Desktop
 2. Откройте проект в Intellij IDEA 
-3. Введите команду `docker-compose up` для запусков контейнеров, убедитесь, что они запустились.
-4. В новом терминале введите команду: `java -jar artifacts/aqa-shop.jar` для запуска jar-файла, убедитесь что он запустился.
+3. Введите команду `docker-compose up` для запусков контейнеров, убедитесь, что они запустились. 
+4. Запустите jar-файл, в новом терминале введите команду, для `MySQL`: `java -jar artifacts/aqa-shop.jar` для `PostgreSQL`: `java -jar .\artifacts\aqa-shop.jar -Dspring.datasource.url=jdbc:postgressql://localhost:5432/app`
 5. Откройте в браузере [приложение](http://localhost:8080/), убедитесь, что оно запускается и работает.
-6. Вернитесь в IntelliJ IDEA и в новом терминале введите команду `./gradlew clean test` для запуска тестов.
-7. По окончанию работы становите работу контейнеров командой `docker-compose down`
-8. Остановить SUT командой CTRL + C
-Примеры
-### Лицензия
-Опишите условия лицензии
+6. Запусите тесты. Вернитесь в IntelliJ IDEA и в новом терминале введите команду для `MySQL`:`./gradlew clean test` для `PostgreSQL`:`./gradlew clean test "-Ddb.url=jdbc:postgresgl://localhost:5432/app"`
+### Окончание работы
+1. Остановить SUT командой CTRL + C
+2. По окончанию работы становите работу контейнеров командой `docker-compose down`
+
+### Просмотреть отчет
+Для получения отчета Allure в терминале введите команду: `./gradlew allureServe`
